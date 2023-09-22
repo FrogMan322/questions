@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.711);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+}
+.questions {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+.questions__holder {
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.questions__holder.active {
+  background-image: url("https://images.unsplash.com/photo-1695051609747-8996a7e16a0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.questions__holder h1 {
+  font-size: 2.5rem;
+}
+
+.questions__holder p {
+  text-align: center;
+  font-size: 2rem;
+  display: none;
+}
+.show__btn {
+  width: 40px;
+  height: 40px;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  background: none;
+  cursor: pointer;
+  align-items: center;
+  font-size: 1.4rem;
+  border: none;
+  text-align: center;
+}
+p.active {
+  display: block;
+}
+.bi {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+/* .show__btn i {
+  width: 15px;
+  height: 15px;
+} */
